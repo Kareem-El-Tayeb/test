@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container flex">
+        <div class="form flex">
+            <div class="field flex">
+                <label for="productname">Product Name</label>
+                <input type="text" placeholder="Product Name" id="productname" name="productname">
+            </div>
+            <div class="field">
+                <label for="productprice">Product Price</label>
+                <input type="text" placeholder="Product Price" id="productprice" name="productprice">
+            </div>
+            <div class="field">
+                <label for="productcategory">Product Category</label>
+                <input type="text" placeholder="Product Category" id="productcategory" name="productcategory">
+            </div>
+            <div class="field">
+                <label for="productdescription">Product Description</label>
+                <input type="text" placeholder="Product Description" id="productdescription" name="productdescription">
+            </div>
+            <button type="submit" id="addBtn">Add Product</button>
+            <button class="show" id="upBtn" type="submit" id="upBtn">Update Product</button>
+        </div>
+        <table>
+            <tr>
+                <th>Product ID</th>
+                <th>Product Name</th>
+                <th>Product Price</th>
+                <th>Product Category</th>
+                <th>Product Description</th>
+                <th>Product Delete</th>
+                <th>Product Update</th>
+            </tr>
+            <tbody id="info">
+    
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

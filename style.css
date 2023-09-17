@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.container .form {
+  flex-direction: column;
+  width: 90%;
+  height: 100%;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.field {
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.field label {
+  font-size: 22px;
+}
+.field input {
+  width: 100%;
+  height: 35px;
+  margin: 5px;
+}
+
+.form #addBtn , .form .show , .form #upBtn
+{
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 1px solid navy;
+    transition: 1s;
+    cursor: pointer;
+    color: navy;
+    margin-left: 20px;
+}
+.form #addBtn:hover , .form .show:hover
+{
+    background-color: navy;
+    color: #fff;
+    transition: 1s;
+    border: none;
+}
+table
+{
+    width: 90%;
+}
+table tr
+{
+    background-color: rgb(255, 200, 200);
+}
+table tr:nth-child(even)
+{
+    background-color: lightgray;
+}
+table tr th , table tr td
+{
+    padding: 10px;
+    text-align: center;
+}
+table #delBtn , table #updateBtn
+{
+    padding: 5px 20px ;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+#delBtn
+{
+    background: red;
+}
+#updateBtn
+{
+    background-color: gold;
+}
+.show
+{
+  display: none;
+}
+#upBtn
+{
+  background-color: green !important;
+  color: #fff !important;
+  border-color: green !important;
+}
